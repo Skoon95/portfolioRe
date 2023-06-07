@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
+          rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/resources/stylesheets/test.css}">
+    <script defer th:src="@{/resources/scripts/project.js}"></script>
+    <title>윤석훈 포트폴리오</title>
+</head>
+<body>
+<section class="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <img th:src="@{/resources/images/back.jpg}" alt="x" class="back">
+                <h1 class="hero-title">안녕하세요 <strong>개발자를 꿈꾸는 윤석훈입니다
+                </strong></h1>
+            </div>
+            <div class="social-intro-container col-sm-12">
+                <ul class="list-inline social social-intro">
+                    <li>
+                        <a th:src="@{/resources/images/ysh.jpg}"><i class="fa fa-"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="media">
+                <img th:src="@{/resources/images/ysh.jpg}" alt="x" class="ysh">
+            </div>
+            <div class="media">
+                <div class="menu">
+                    <ul class="list">
+                        <li class="item">
+                            <a href="#" class="me"><img th:src="@{/resources/images/user.png}" alt="" class="img"></a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="skill"><img th:src="@{/resources/images/skill.png}" alt=""
+                                                           class="img"></a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="project"><img th:src="@{/resources/images/pro.png}" alt=""
+                                                             class="img"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<main class="main">
+    <section class="aboutMe" id="about">
+        <div class="container">
+            <h2 class="title">About Me</h2>
+            <div class="row">
+                <div class="text">
+                    <p>
+                        안녕하세요
+                        <br>
+                        백엔드 개발자를 꿈꾸고 있는 윤석훈입니다.
+                        <br>
+                        팀원들과 함께 프로젝트를 진행해 함께 개발하고 결과물을
+                        만드는것에
+                        <br>
+                        매력을 느껴 개발자의 길을 선택했습니다
+                        <br>
+                        끊임없는 자기계발로 성장하는 개발자가 되겠습니다
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>

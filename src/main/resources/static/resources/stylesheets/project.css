@@ -1,0 +1,150 @@
+@charset "UTF-8";
+html {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+* {
+    border: red 1px solid;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #555;
+    line-height: 28px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    position: relative;
+    display: block;
+}
+
+/* Intro */
+.intro {
+    position: relative;
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 2rem;
+}
+
+.intro > .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.intro > .container {
+    position: relative;
+    z-index: 2;
+}
+
+.intro > .container > .row > .media > .ysh {
+    position: relative;
+    z-index: 3;
+    margin: 3rem auto 0;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 6rem;
+}
+
+.intro > .container > .row > .media > .menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3rem;
+}
+
+.intro > .container > .row > .media > .menu > .list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0;
+    height: 100%;
+    border-radius: 50px;
+    background-color: #C75050;
+}
+
+.intro > .container > .row > .media > .menu > .list > .item {
+    margin: 0 1rem;
+}
+
+/* Main */
+.main {
+    max-width: 1250px;
+    width: 100%;
+    box-shadow: 0 0 50px 5px rgb(0 0 0 / 15%);
+    position: relative;
+    margin: -90px auto 0;
+    background: #fff;
+    z-index: 10;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*aboutMe*/
+.main > .aboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 10rem;
+    width: 100%;
+}
+
+.main > .aboutMe > .container {
+    text-align: center;
+    margin-top: 10vh;
+    max-width: 100%;
+    width: 100%;
+
+}
+
+.main > .aboutMe > .container > .row {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main > .aboutMe > .container > .row  > .title {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 500;
+    top: -50px;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+}
+.main > .aboutMe > .container > .row > .text > .content{
+    font-size: 32px;
+    text-align: left;
+}
+
+

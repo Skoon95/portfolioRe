@@ -4,7 +4,7 @@ html {
 }
 
 * {
-    border: red 1px solid;
+    /*border: red 1px solid;*/
 }
 
 body {
@@ -23,9 +23,11 @@ body {
 section {
     padding-top: 120px;
     padding-bottom: 120px;
+    width: 100%;
     position: relative;
-    display: block;
+    display: flex;
 }
+
 
 /* Intro */
 .intro {
@@ -84,6 +86,10 @@ section {
 .intro > .container > .row > .media > .menu > .list > .item {
     margin: 0 1rem;
 }
+.intro > .container > .row > .media > .menu > .list > .item > a .img{
+    width: 50px;
+    height: 50px;
+}
 
 /* Main */
 .main {
@@ -95,56 +101,265 @@ section {
     background: #fff;
     z-index: 10;
 
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
 /*aboutMe*/
 .main > .aboutMe {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
-    height: 10rem;
-    width: 100%;
 }
 
-.main > .aboutMe > .container {
+.main > .aboutMe > .title{
+    width: 1250px;
+    height: 50px;
+    font-size: 50px;
+    margin-bottom: 4rem;
     text-align: center;
-    margin-top: 10vh;
-    max-width: 100%;
-    width: 100%;
-
 }
 
-.main > .aboutMe > .container > .row {
-    width: 100%;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+.main > .aboutMe > .text {
+    width: 1250px;
+    padding-left: 9rem;
+    font-size: 25px;
+}
 
+/*career*/
+
+.main >.aboutMe >.career {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main > .aboutMe > .career > .title{
+    width: 1250px;
+    height: 50px;
+    font-size: 50px;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.main > .aboutMe  > .career > .history {
+    width: 1100px;
+    display: flex;
+}
+.main > .aboutMe  > .career >.history>.one, .two{
+    flex: 1;
+}
+
+.main > .aboutMe > .career >.history>.one b {
+    font-size: 1.7rem;
+}
+.main > .aboutMe  > .career >.history>.one p {
+    font-size: 1.3rem;
+}
+
+.main > .aboutMe  > .career >.history>.two b {
+    font-size: 1.7rem;
+}
+.main > .aboutMe  > .career >.history>.two p {
+    font-size: 1.3rem;
+}
+
+/*contact*/
+
+.main >.aboutMe >.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main > .aboutMe > .contact > .title{
+    width: 1250px;
+    height: 50px;
+    font-size: 50px;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.main > .aboutMe > .contact > .contact{
+    font: inherit;
+    padding: 3rem 3rem 3.5rem 3rem;
+    /*background-color: #dfe7e8;*/
+}
+
+
+.main > .aboutMe > .contact >.box {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 1100px;
+}
+
+.main > .aboutMe > .contact >.box > .image {
+    margin-right: 1.5rem;
+    width: 50px;
+    height: 50px;
+}
+
+.main > .aboutMe > .contact > .box > .text{
+    font: inherit;
+    font-size: 1.5rem;
+
+    padding-top: 0.5rem;
+}
+.main > .aboutMe > .contact > .box > .one {
+    margin-right: 18rem;
+}
+
+/*skill*/
+.main > .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f8f8f8;
+}
+
+.main > .skill > .title{
+    width: 1250px;
+    height: 100px;
+    font-size: 50px;
+    margin-bottom: 4rem;
+    text-align: center
+}
+
+.main > .skill > .grid{
+    /*align-self: stretch;*/
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    list-style-type: none;
+    margin-block: unset;
+    margin-inline: unset;
+    padding-inline: unset;
+
+    width: 1200px;
+}
+.main > .skill > .grid > .abilities{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+
+    padding-right: 1rem;
+}
+
+.main > .skill > .grid > .abilities:hover {
+    transform: translateY(0.5rem);
+}
+
+.main > .skill > .grid > .abilities > .image{
+    width: 5rem;
+    height: 7rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.main > .skill > .grid > .abilities > .box {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
 
-.main > .aboutMe > .container > .row  > .title {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    color: #000;
-    font-weight: 500;
-    top: -50px;
-    position: relative;
+.main > .skill > .grid > .abilities > .box > .title{
+    font: inherit;
+    font-size: 2.5rem;
+    margin-bottom: 0.7rem;
+    margin-top: 0.7rem;
+}
+
+.main > .skill > .grid > .abilities > .box > .text{
+    font: inherit;
+    margin-bottom: 0.7rem;
+
+}
+
+/*project*/
+
+.main > .project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main > .project > .title{
+    width: 1250px;
+    height: 100px;
+    font-size: 50px;
+    margin-bottom: 4rem;
+    text-align: center
+}
+
+.main > .project > .section{
+    width: 1250px;
+}
+
+.main > .project  > .section input[id*="slide"] {
+    display: none;
+}
+.main > .project  > .section .slideWrap {
+    max-width: 33rem;
+    max-height: 35rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.main > .project  > .section .slideList{
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.main > .project  > .section .slideList > li{
     display: inline-block;
-    margin: 0;
-    text-align: center;
+    vertical-align: center;
+    width: 100%;
+    height: 100%;
+
+    transition: all 0.5s;
 }
-.main > .aboutMe > .container > .row > .text > .content{
-    font-size: 32px;
-    text-align: left;
+
+.main > .project  > .section .slideList > li >a{
+    display: block;
+    position: relative;
 }
+
+.main > .project  > .section .slideList > li >a img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.main > .project  > .section .slideList label {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    cursor: pointer;
+}
+
+.main > .project  > .section .slideList .left{
+    left: 30px;
+    background: url("../images/left.png") center center / 100% no-repeat;
+}
+
+.main > .project  > .section .slideList .right{
+    right: 30px;
+    background: url("../images/right.png") center center / 100% no-repeat;
+}
+.main > .project > .section [id="slide01"]:checked ~ .slideWrap .slideList > li {transform: translateX(0%);}
+
+.main > .project > .section [id="slide02"]:checked ~ .slideWrap .slideList > li {transform: translateX(-100%);}
+.main > .project > .section [id="slide03"]:checked ~ .slideWrap .slideList > li {transform: translateX(-200%);}
+
+
 
 

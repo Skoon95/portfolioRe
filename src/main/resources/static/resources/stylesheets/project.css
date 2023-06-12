@@ -63,12 +63,30 @@ section {
     border-radius: 6rem;
 }
 
+intro > .container > .row > .media{
+    /*position: absolute;*/
+}
+
 .intro > .container > .row > .media > .menu {
     position: absolute;
     top: 100%;
+
+
+    left: 50%;
+    transform: translateX(-50%);
+
+
+    margin-top: 3rem;
+    z-index: 9999;
+}
+
+.intro > .container > .row > .media > .menu.fixed {
+    position: fixed;
+    top: 1%;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 3rem;
+    z-index: 9999;
 }
 
 .intro > .container > .row > .media > .menu > .list {
@@ -99,7 +117,7 @@ section {
     position: relative;
     margin: -90px auto 0;
     background: #fff;
-    z-index: 10;
+    z-index: 1;
 
 }
 
@@ -243,7 +261,7 @@ section {
 .main > .skill > .grid > .abilities{
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: #ffeaa7;
     border-radius: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;

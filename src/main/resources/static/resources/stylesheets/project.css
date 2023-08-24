@@ -109,7 +109,7 @@ intro > .container > .row > .media{
     margin: 0 1rem;
 }
 .intro > .container > .row > .media > .menu > .list > .item > a .img{
-    width: 100%;
+    width: 50px;
     max-width: 50px;
     height: 100%;
     max-height: 50px;
@@ -463,6 +463,26 @@ intro > .container > .row > .media{
         font-size: 0.8rem;
     }
 
+
+    /*history*/
+    /*.main > .aboutMe > .career > .history {*/
+    /*    display: flex;*/
+    /*    align-items: center;*/
+    /*    justify-content: center;*/
+    /*    width: 100%;*/
+    /*    max-width: 1100px;*/
+    /*    margin: auto; !* 가운데 정렬을 위해 추가 *!*/
+    /*}*/
+
+    /*.main > .aboutMe > .career > .history > .one {*/
+    /*    order: -1; !* 'one' 요소를 'two' 요소 위로 배치 *!*/
+    /*    text-align: center; !* 가운데 정렬을 위해 추가 *!*/
+    /*}*/
+
+    /*.main > .aboutMe > .career > .history > .two {*/
+    /*    text-align: center; !* 가운데 정렬을 위해 추가 *!*/
+    /*}*/
+
     /*contact*/
     .main >.aboutMe >.contact{
         width: 100%;
@@ -481,7 +501,8 @@ intro > .container > .row > .media{
         display: grid;
         gap: 2rem;
         grid-template-columns: repeat(1, 1fr);
-        width: 700px;
+        width: 100%;
+        max-width: 700px;
     }
 
 }
